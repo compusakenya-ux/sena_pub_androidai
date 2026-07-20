@@ -1,0 +1,17 @@
+name: sena
+description: Kenyan Boda-Boda Booking Platform
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  go_router: ^13.2.0
+  dio: ^5.4.0
+  geolocator: ^11.0.0
+  google_maps_flutter: ^2.5.3
+  web_socket_channel: ^2.4.0
