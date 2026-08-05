@@ -2,15 +2,23 @@ package com.example.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val SenaGreen = Color(0xFF00A859)
-val SenaBlack = Color(0xFF000000)
-val SenaBackground = Color(0xFFF8F9FA)
-val SenaError = Color(0xFFD32F2F)
+// Sena Cyber Dark Color Palette
+val SenaBackground = Color(0xFF0D0F16)
+val SenaSurface = Color(0xFF181B26)
+val SenaSurfaceVariant = Color(0xFF212534)
+val SenaBorder = Color(0xFF2E3448)
 
-val Purple80 = Color(0xD0BCFF00)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Accent Colors
+val SenaPeach = Color(0xFFFF9E66)
+val SenaOrangeCTA = Color(0xFFFF7A00)
+val SenaOrangeGlow = Color(0x33FF7A00)
+val SenaElectricCyan = Color(0xFF4EEBFB)
+val SenaElectricGlow = Color(0x334EEBFB)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val SenaPlatinum = Color(0xFFC084FC)
+val SenaSuccessGreen = Color(0xFF34D399)
+
+// Text Colors
+val SenaTextPrimary = Color(0xFFF3F4F6)
+val SenaTextSecondary = Color(0xFF9CA3AF)
+val SenaTextMuted = Color(0xFF6B7280)
