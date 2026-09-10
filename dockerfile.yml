@@ -1,0 +1,21 @@
+# --- Build Stage ---
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY . .
+# Add build steps (e.g., npm run build) if using TypeScript
+
+# --- Production Stage ---
+FROM node:18-alpine
+WORKDIR /app
+# Create non-root user for security
+RUN addgroup -g 1001 -S appuser && adduser -S appuser -u 1001
+USER appuser
+
+COPY --from=builder --chown=appuser:appuser /app/node_modules ./node_modules
+COPY --from=builder --chown=appuser:appuser /app/dist ./dist
+# Or COPY --from=builder /app/src ./src if not compiling
+
+EXPOSE 3000
+CMD ["node", "dist/server.js"]
